@@ -35,8 +35,8 @@ public class VeganSausage extends Food implements Price{
     }
     
     @Override
-    public Double calcPrice(){
-        double pr = 400;
+    public Double calcPrice(double prTofu,double prOnion){
+        double pr = 400+fixPrice;
     return pr;
     }
     

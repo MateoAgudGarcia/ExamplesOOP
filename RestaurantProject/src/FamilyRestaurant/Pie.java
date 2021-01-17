@@ -35,10 +35,11 @@ public class Pie extends Dessert implements Price{
     }
     
     @Override
-    public Double calcPrice(){
-        double pr = (getGrPastry()+getQtApple()+getGrAdd())*0.5+fixPrice;
+    public Double calcPrice(double prPas,double prApp){
+        double pr = ((getGrPastry()*prPas)+(getQtApple()*prApp)+getGrAdd())*0.2+fixPrice;
     return pr;
     }
+    
     
     public Integer calcCalor(){
         int pr = (getGrPastry()+getQtApple()+getGrAdd())*30;

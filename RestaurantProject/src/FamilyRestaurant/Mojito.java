@@ -35,8 +35,8 @@ public class Mojito extends Drinks implements Price{
     }
     
     @Override
-    public Double calcPrice(){
-        double pr = (getMlVodka()+getQtLemon()+getMlTop())*0.5+fixPrice;
+    public Double calcPrice(double Moj,double Vod){
+        double pr = 400+fixPrice;
     return pr;
     }
 }

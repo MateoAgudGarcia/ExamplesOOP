@@ -148,219 +148,183 @@ public class Inventory {
     }
     
     public int bTofu(int extra){
-        if(getgTofu()>0){
-            int aux = getgTofu() + extra;
-            setgTofu(aux);
-        }else{
-            System.out.println("No hay existencias");
-        }
+        int aux = getgTofu() + extra;
+        setgTofu(aux);
     return getgTofu();
     }
     public int bOnion(int extra){
-        if(getgOnion()>0){
-            int aux = getgOnion()+ extra;
-            setgOnion(aux);
-        }else{
-            System.out.println("No hay existencias");
-        }
+        int aux = getgOnion()+ extra;
+        setgOnion(aux);
     return getgOnion();
     }
     public int bPasta(int extra){
-        if(getgPasta()>0){
-            int aux = getgPasta()+ extra;
-            setgPasta(aux);
-        }else{
-            System.out.println("No hay existencias");
-        }
+        int aux = getgPasta()+ extra;
+        setgPasta(aux);
     return getgPasta();
     }
     public int bHersheys(int extra){
-        if(getgHersheys()>0){
-            int aux = getgHersheys()+ extra;
-            setgHersheys(aux);
-        }else{
-            System.out.println("No hay existencias");
-        }
+        int aux = getgHersheys()+ extra;
+        setgHersheys(aux);
     return getgHersheys();
     }
     public int bMilk(int extra){
-        if(getmMilk()>0){
-            int aux = getmMilk()+ extra;
-            setmMilk(aux);
-        }else{
-            System.out.println("No hay existencias");
-        }
+        int aux = getmMilk()+ extra;
+        setmMilk(aux);
     return getmMilk();
     }
     public int bCoffee(int extra){
-        if(getgCoffee()>0){
-            int aux = getgCoffee()+ extra;
-            setgCoffee(aux);
-        }else{
-            System.out.println("No hay existencias");
-        }
+        int aux = getgCoffee()+ extra;
+        setgCoffee(aux);
     return getgCoffee();
     }
     public int bVodka(int extra){
-        if(getmVodka()>0){
-            int aux = getmVodka()+ extra;
-            setmVodka(aux);
-        }else{
-            System.out.println("No hay existencias");
-        }
+        int aux = getmVodka()+ extra;
+        setmVodka(aux);
     return getmVodka();
     }
     public int bLemon(int extra){
-        if(getqLemon()>0){
-            int aux = getqLemon()+ extra;
-            setqLemon(aux);
-        }else{
-            System.out.println("No hay existencias");
-        }
+        int aux = getqLemon()+ extra;
+        setqLemon(aux);
     return getqLemon();
     }
     public int bApple(int extra){
-        if(getqApple()>0){
-            int aux = getqApple()+ extra;
-            setqApple(aux);
-        }else{
-            System.out.println("No hay existencias");
-        }
+        int aux = getqApple()+ extra;
+        setqApple(aux);
     return getqApple();
     }
     public int bPastry(int extra){
-        if(getgPastry()>0){
-            int aux = getgPastry()+ extra;
-            setgPastry(aux);
-        }else{
-            System.out.println("No hay existencias");
-        }
+        int aux = getgPastry()+ extra;
+        setgPastry(aux);
     return getgPastry();
     }
     public int bChips(int extra){
-        if(getgChips()>0){
-            int aux = getgChips()+ extra;
-            setgChips(aux);
-        }else{
-            System.out.println("No hay existencias");
-        }
+        int aux = getgChips()+ extra;
+        setgChips(aux);
     return getgChips();
     }
     public int bIceCream(int extra){
-        if(getgIceCr()>0){
-            int aux = getgIceCr()+ extra;
-            setgIceCr(aux);
-        }else{
-            System.out.println("No hay existencias");
-        }
+        int aux = getgIceCr()+ extra;
+        setgIceCr(aux);
     return getgIceCr();
     }
     
     public int sTofu(int rest){
-        if(getgTofu()>0){
+        if((getgTofu()-rest)>=0){
             int aux = getgTofu() - rest;
             setgTofu(aux);
         }else{
             System.out.println("No hay existencias");
+            setgTofu(-1);
         }
     return getgTofu();
     }
     public int sOnion(int rest){
-        if(getgOnion()>0){
+        if((getgOnion()-rest)>=0){
             int aux = getgOnion()- rest;
             setgOnion(aux);
         }else{
             System.out.println("No hay existencias");
+            setgOnion(-1);
         }
     return getgOnion();
     }
     public int sPasta(int rest){
-        if(getgPasta()>0){
+        if((getgPasta()-rest)>=0){
             int aux = getgPasta()- rest;
             setgPasta(aux);
         }else{
             System.out.println("No hay existencias");
+            setgPasta(-1);
         }
     return getgPasta();
     }
     public int sHersheys(int rest){
-        if(getgHersheys()>0){
+        if((getgHersheys()-rest)>=0){
             int aux = getgHersheys()- rest;
             setgHersheys(aux);
         }else{
             System.out.println("No hay existencias");
+            setgHersheys(-1);
         }
     return getgHersheys();
     }
     public int sMilk(int rest){
-        if(getmMilk()>0){
+        if((getmMilk()-rest)>=0){
             int aux = getmMilk()- rest;
             setmMilk(aux);
         }else{
             System.out.println("No hay existencias");
+            setmMilk(-1);
         }
     return getmMilk();
     }
     public int sCoffee(int rest){
-        if(getgCoffee()>0){
+        if((getgCoffee()-rest)>=0){
             int aux = getgCoffee()- rest;
             setgCoffee(aux);
         }else{
             System.out.println("No hay existencias");
+            setgCoffee(-1);
         }
     return getgCoffee();
     }
     public int sVodka(int rest){
-        if(getmVodka()>0){
+        if((getmVodka()-rest)>=0){
             int aux = getmVodka()- rest;
             setmVodka(aux);
         }else{
             System.out.println("No hay existencias");
+            setmVodka(-1);
         }
     return getmVodka();
     }
     public int sLemon(int rest){
-        if(getqLemon()>0){
+        if((getqLemon()-rest)>=0){
             int aux = getqLemon()- rest;
             setqLemon(aux);
         }else{
             System.out.println("No hay existencias");
+            setqLemon(-1);
         }
     return getqLemon();
     }
     public int sApple(int rest){
-        if(getqApple()>0){
+        if((getqApple()-rest)>=0){
             int aux = getqApple()- rest;
             setqApple(aux);
         }else{
             System.out.println("No hay existencias");
+            setqApple(-1);
         }
     return getqApple();
     }
     public int sPastry(int rest){
-        if(getgPastry()>0){
+        if((getgPastry()-rest)>=0){
             int aux = getgPastry()- rest;
             setgPastry(aux);
         }else{
             System.out.println("No hay existencias");
+            setgPastry(-1);
         }
     return getgPastry();
     }
     public int sChips(int rest){
-        if(getgChips()>0){
+        if((getgChips()-rest)>=0){
             int aux = getgChips()- rest;
             setgChips(aux);
         }else{
             System.out.println("No hay existencias");
+            setgChips(-1);
         }
     return getgChips();
     }
     public int sIceCream(int rest){
-        if(getgIceCr()>0){
+        if((getgIceCr()-rest)>=0){
             int aux = getgIceCr()- rest;
             setgIceCr(aux);
         }else{
             System.out.println("No hay existencias");
+            setgIceCr(-1);
         }
     return getgIceCr();
     

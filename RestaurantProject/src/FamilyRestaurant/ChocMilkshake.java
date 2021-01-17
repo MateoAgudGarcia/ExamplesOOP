@@ -35,8 +35,8 @@ public class ChocMilkshake extends Drinks implements Price{
     }
     
     @Override
-    public Double calcPrice(){
-        double pr = (getGrHersheys()+getGrHersheys()+getMlTop())*0.5+fixPrice;
+    public Double calcPrice(double prHer,double prMilk){
+        double pr = ((getGrHersheys()*prHer)+(getMlMilk()*prMilk)+getMlTop())*0.15+fixPrice;
     return pr;
     }
 }

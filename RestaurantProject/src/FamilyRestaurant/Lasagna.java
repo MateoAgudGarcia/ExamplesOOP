@@ -35,8 +35,8 @@ public class Lasagna extends Food implements Price{
     }
     
     @Override
-    public Double calcPrice(){
-        double pr = (getGrPasta()+getMlSauce()+getGrAccom())*0.5+fixPrice;
+    public Double calcPrice(double prSauc,double prPas){
+        double pr = ((getMlSauce()*prSauc)+(getGrPasta()*prPas)+getGrAccom())*0.2+fixPrice;
     return pr;
     }
     

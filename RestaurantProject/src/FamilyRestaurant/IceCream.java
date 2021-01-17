@@ -35,8 +35,8 @@ public class IceCream extends Dessert implements Price{
     }
 
     @Override
-    public Double calcPrice(){
-        double pr = (getGrChips()+getGrIceCr()+getGrAdd())*0.5+fixPrice;
+    public Double calcPrice(double prChip,double prIceC){
+        double pr = ((getGrChips()*prChip)+(getGrIceCr()*prIceC)+getGrAdd())*0.12+fixPrice;
     return pr;
     }
     

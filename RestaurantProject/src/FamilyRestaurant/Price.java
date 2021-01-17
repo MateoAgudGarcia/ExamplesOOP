@@ -9,5 +9,5 @@ package FamilyRestaurant;
  * @author Mateo Agudelo Garcia
  */
 public interface Price {
-    public abstract Double calcPrice();
+    public abstract Double calcPrice(double prA,double prB);
 }

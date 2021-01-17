@@ -35,8 +35,8 @@ public class Coffee extends Drinks implements Price{
     }
     
     @Override
-    public Double calcPrice(){
-        double pr = (getGrCoffee()+getMlMilk()+getMlTop())*0.5+fixPrice;
+    public Double calcPrice(double prCof,double prMilk){
+        double pr = ((getGrCoffee()*prCof)+(getMlMilk()*prMilk)+getMlTop())*0.1+fixPrice;
     return pr;
     }
     
