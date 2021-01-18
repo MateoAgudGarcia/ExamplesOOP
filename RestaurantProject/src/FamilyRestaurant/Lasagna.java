@@ -40,6 +40,10 @@ public class Lasagna extends Food implements Price{
     return pr;
     }
     
-    
+    @Override
+    public String printPrice(int ingA,int ingB,double pric){
+        String pPr = "Lasagna= Pasta: "+ingA+" gr & Sauce: "+ingB+" mL & Price: $"+pric+".";
+    return pPr;
+    }
     
 }

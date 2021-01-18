@@ -45,4 +45,9 @@ public class Pie extends Dessert implements Price{
         int pr = (getGrPastry()+getQtApple()+getGrAdd())*30;
     return pr;
     }
+    @Override
+    public String printPrice(int ingA,int ingB,double pric){
+        String pPr = "Apple pie= Apple: "+ingA+" & Pastry: "+ingB+" gr & Price: $"+pric+".";
+    return pPr;
+    }
 }

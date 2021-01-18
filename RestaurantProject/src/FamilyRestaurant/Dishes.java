@@ -9,5 +9,5 @@ package FamilyRestaurant;
  * @author Mateo Agudelo Garcia
  */
 public abstract class Dishes {
-    protected int fixPrice = 1000;
+    final protected int fixPrice = 1000;
 }

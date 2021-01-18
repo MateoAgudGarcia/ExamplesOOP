@@ -45,5 +45,10 @@ public class IceCream extends Dessert implements Price{
     return pr;
     }
     
+    @Override
+    public String printPrice(int ingA,int ingB,double pric){
+        String pPr = "Ice cream&Chips= Chips: "+ingA+" gr & Ice Cream: "+ingB+" gr & Price: $"+pric+".";
+    return pPr;
+    }
     
 }

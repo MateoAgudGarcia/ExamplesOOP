@@ -10,4 +10,5 @@ package FamilyRestaurant;
  */
 public interface Price {
     public abstract Double calcPrice(double prA,double prB);
+    public abstract String printPrice(int ingA,int ingB, double pri);
 }

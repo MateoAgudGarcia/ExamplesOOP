@@ -39,5 +39,9 @@ public class Coffee extends Drinks implements Price{
         double pr = ((getGrCoffee()*prCof)+(getMlMilk()*prMilk)+getMlTop())*0.1+fixPrice;
     return pr;
     }
-    
+    @Override
+    public String printPrice(int ingA,int ingB,double pric){
+        String pPr = "Cafe= Coffee: "+ingA+" gr & Milk: "+ingB+" mL & Price: $"+pric+".";
+    return pPr;
+    }
 }

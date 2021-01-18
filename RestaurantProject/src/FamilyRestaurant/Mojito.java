@@ -39,4 +39,9 @@ public class Mojito extends Drinks implements Price{
         double pr = 400+fixPrice;
     return pr;
     }
+    @Override
+    public String printPrice(int ingA,int ingB,double pric){
+        String pPr = "Mojito= Vodka: "+ingA+" mL & Lemons: "+ingB+" & Price: $"+pric+".";
+    return pPr;
+    }
 }

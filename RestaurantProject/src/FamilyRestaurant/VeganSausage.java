@@ -39,6 +39,11 @@ public class VeganSausage extends Food implements Price{
         double pr = 400+fixPrice;
     return pr;
     }
+    @Override
+    public String printPrice(int ingA,int ingB,double pric){
+        String pPr = "Vegan sausage= Tofu: "+ingA+" gr & Onion: "+ingB+" gr & Price: $"+pric+".";
+    return pPr;
+    }
     
     
 }

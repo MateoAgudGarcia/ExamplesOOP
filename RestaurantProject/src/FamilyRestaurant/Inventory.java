@@ -162,6 +162,11 @@ public class Inventory {
         setgPasta(aux);
     return getgPasta();
     }
+    public int bSauce(int extra){
+        int aux = getmSauce()+ extra;
+        setmSauce(aux);
+    return getmSauce();
+    }
     public int bHersheys(int extra){
         int aux = getgHersheys()+ extra;
         setgHersheys(aux);
@@ -213,7 +218,7 @@ public class Inventory {
             int aux = getgTofu() - rest;
             setgTofu(aux);
         }else{
-            System.out.println("No hay existencias");
+            System.out.println("Ouf of stock");
             setgTofu(-1);
         }
     return getgTofu();
@@ -223,7 +228,7 @@ public class Inventory {
             int aux = getgOnion()- rest;
             setgOnion(aux);
         }else{
-            System.out.println("No hay existencias");
+            System.out.println("Ouf of stock");
             setgOnion(-1);
         }
     return getgOnion();
@@ -233,17 +238,27 @@ public class Inventory {
             int aux = getgPasta()- rest;
             setgPasta(aux);
         }else{
-            System.out.println("No hay existencias");
+            System.out.println("Ouf of stock");
             setgPasta(-1);
         }
     return getgPasta();
+    }
+    public int sSauce(int rest){
+        if((getmSauce()-rest)>=0){
+            int aux = getmSauce()- rest;
+            setgPasta(aux);
+        }else{
+            System.out.println("Ouf of stock");
+            setmSauce(-1);
+        }
+    return getmSauce();
     }
     public int sHersheys(int rest){
         if((getgHersheys()-rest)>=0){
             int aux = getgHersheys()- rest;
             setgHersheys(aux);
         }else{
-            System.out.println("No hay existencias");
+            System.out.println("Ouf of stock");
             setgHersheys(-1);
         }
     return getgHersheys();
@@ -253,7 +268,7 @@ public class Inventory {
             int aux = getmMilk()- rest;
             setmMilk(aux);
         }else{
-            System.out.println("No hay existencias");
+            System.out.println("Ouf of stock");
             setmMilk(-1);
         }
     return getmMilk();
@@ -263,7 +278,7 @@ public class Inventory {
             int aux = getgCoffee()- rest;
             setgCoffee(aux);
         }else{
-            System.out.println("No hay existencias");
+            System.out.println("Ouf of stock");
             setgCoffee(-1);
         }
     return getgCoffee();
@@ -273,7 +288,7 @@ public class Inventory {
             int aux = getmVodka()- rest;
             setmVodka(aux);
         }else{
-            System.out.println("No hay existencias");
+            System.out.println("Ouf of stock");
             setmVodka(-1);
         }
     return getmVodka();
@@ -283,7 +298,7 @@ public class Inventory {
             int aux = getqLemon()- rest;
             setqLemon(aux);
         }else{
-            System.out.println("No hay existencias");
+            System.out.println("Ouf of stock");
             setqLemon(-1);
         }
     return getqLemon();
@@ -293,7 +308,7 @@ public class Inventory {
             int aux = getqApple()- rest;
             setqApple(aux);
         }else{
-            System.out.println("No hay existencias");
+            System.out.println("Ouf of stock");
             setqApple(-1);
         }
     return getqApple();
@@ -303,7 +318,7 @@ public class Inventory {
             int aux = getgPastry()- rest;
             setgPastry(aux);
         }else{
-            System.out.println("No hay existencias");
+            System.out.println("Ouf of stock");
             setgPastry(-1);
         }
     return getgPastry();
@@ -313,7 +328,7 @@ public class Inventory {
             int aux = getgChips()- rest;
             setgChips(aux);
         }else{
-            System.out.println("No hay existencias");
+            System.out.println("Ouf of stock");
             setgChips(-1);
         }
     return getgChips();
@@ -323,7 +338,7 @@ public class Inventory {
             int aux = getgIceCr()- rest;
             setgIceCr(aux);
         }else{
-            System.out.println("No hay existencias");
+            System.out.println("Ouf of stock");
             setgIceCr(-1);
         }
     return getgIceCr();
