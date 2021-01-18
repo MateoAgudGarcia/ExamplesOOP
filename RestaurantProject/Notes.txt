@@ -1,0 +1,22 @@
+1. Tofu 	2. Onion	3. Pasta
+4. Sauce	5. Hersheys	6. Milk
+7. Coffee	8. Vodka	9. Lemon
+10. Apple	11. Pastry	12. Chips
+		13. IceCr
+
+
+vegS = false 
+lasg = false 
+chMilk = false 
+moj = false 
+cof = false 
+iceC = false 
+pi = false 
+
+vSau
+lna
+cMsvil
+cfe
+mjt
+piea
+icream
