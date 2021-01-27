@@ -1,3 +1,5 @@
+# EXAMPLE RESTAURANT USING OOP IN JAVA
+
 This is the first example on GIT 
 I'll use OOP for different examples
 
@@ -19,5 +21,7 @@ initialize all dishes, follow order below:
 10. Lemon	11. Apple	12. Pastry
 	13. Chips	14. IceCr
 
-Note: MUST NOT ENTER LETTERS, AND MUST ENTER
+## Mateo Agudelo García 2021
+
+### Note: MUST NOT ENTER LETTERS, AND MUST ENTER
 INTEGER VALUES SEPARATES BY LINES
